@@ -2,11 +2,13 @@ cv:
   name: 马泽理
   label: 计算机科学硕士在读
   email: zma56@jh.edu
+  phone: "4434189697"
   location: 美国 巴尔的摩
   image: ""
   summary: >
-    约翰斯·霍普金斯大学计算机科学硕士在读，于 ARCADE Lab 开展医疗机器人与 AI 辅助干预方向的科研工作。
-    研究兴趣涵盖深度学习、扩散模型、视觉语言模型及多智能体系统在外科感知与临床工作流中的应用。
+    研究兴趣广泛涵盖机器学习与人工智能领域，尤其关注其与软件系统及智能自动化的深度融合。
+    致力于探索数据驱动模型与高效系统设计如何提升学习性能、可扩展性及现实场景中的决策能力。
+    同时热衷于将 AI 技术应用于计算机视觉、交互式环境等领域，推动智能技术与系统工程的结合。
 
   social_networks:
     - network: GitHub
@@ -17,12 +19,11 @@ cv:
       - institution: 约翰斯·霍普金斯大学
         location: 美国 巴尔的摩
         area: 计算机科学
-        studyType: 理学硕士
+        studyType: 工程理学硕士
         start_date: 2025-09
         end_date: 2027-05
         highlights:
-          - "ARCADE Lab — 导师：Mathias Unberath 教授 & 博士生 Blanca Inigo Romillo"
-          - "研究方向：医疗机器人、扩散模型、视觉语言模型"
+          - "计算机科学系，惠廷工程学院"
 
       - institution: 上海应用技术大学
         location: 中国 上海
@@ -32,67 +33,90 @@ cv:
         end_date: 2025-03
         highlights:
           - "GPA：4.0/5.0（均分 90 分，专业排名 1/408）"
-          - "国家奖学金（2023）、优秀学生（2024）、校级一等奖学金（2023 & 2024）"
+
+    荣誉与奖项:
+      - title: 国家奖学金
+        date: "2023"
+        awarder: 上海应用技术大学
+
+      - title: 优秀学生
+        date: "2024"
+        awarder: 上海应用技术大学
+
+      - title: 校级一等奖学金
+        date: "2023 & 2024"
+        awarder: 上海应用技术大学
+
+    科研经历:
+      - company: 约翰斯·霍普金斯大学 ARCADE Lab
+        position: 研究助理
+        location: 美国 巴尔的摩
+        start_date: 2026-01
+        highlights:
+          - "导师：Mathias Unberath 教授、博士生 Blanca Inigo Romillo"
+          - 基于蒙特卡洛方法开发椎弓根螺钉全胸腰椎（T1–L5）路径规划流水线，处理 742 例患者 CT 网格模型，生成超过 23,000 条经验证轨迹，成功率达 99%。
+          - 针对 4 个解剖区域设计自适应约束条件以应对椎弓根形态差异，并实现基于曲面法向量的终板过滤器，完全消除上下表面违规情况。
+          - 构建自动化批处理基础设施，涵盖网格质量控制、基于 EDT 的间隙计算及 FCSV 输出，用于 3D Slicer 可视化与验证。
+
+      - company: 动作条件化术中 X 射线视角预测
+        position: 基于条件扩散模型的 C 臂引导手术视角规划
+        location: 美国 巴尔的摩
+        start_date: 2026-03
+        highlights:
+          - "构建闭环手术视角规划的观测预测模块：给定当前透视图像与候选 6-DoF C 臂运动，条件扩散模型（DDPM 训练 / DDIM 推理）预测目标视角下的 X 射线图像，作为下游 VLM（MedGemma）的视觉预览。"
+          - 利用 DeepDRR 从 827 例 CT 体积构建 DRR 训练数据集，每例采样 100 个姿态（5 个椎体中心 × 20 个覆盖正位/侧位/斜位的角度），并按角度与位移距离阈值筛选，每例保留约 1,500 个训练样本对。
+          - 设计 U-Net 骨干网络，引入用于源图像条件化的交叉注意力机制，以及用于注入 9 维相对姿态嵌入（6D 旋转 + 3D 位移）的 AdaGroupNorm。
+          - 采用混合精度（fp16）在 RTX 3090 上完成 DDPM 训练与 DDIM 推理。
 
     工作经历:
       - company: 青岛海尔科技有限公司
-        position: 软件开发实习生
+        position: 软件开发部实习生
         location: 中国 青岛
         start_date: 2024-03
         end_date: 2024-08
         highlights:
-          - 利用 Redis 优化高并发场景下的系统性能，数据库访问量降低约 40%，整体响应时间显著缩短。
+          - 利用 Redis 优化高并发场景下的系统性能瓶颈，数据库访问量降低约 40%，整体响应时间显著缩短。
           - 设计并开发批处理机制，有效降低内存消耗。
-          - 优化数据库查询语句，消除复杂嵌套查询与全表扫描，为高并发场景添加索引以提升查询性能。
-          - 实现延迟双删策略，保障缓存一致性。
+          - 优化数据库查询语句，避免复杂嵌套查询与全表扫描，为高并发场景添加索引以提升查询性能。
+          - 实现延迟双删策略，替代异步监听与可靠消息删除策略，保障缓存一致性。
 
       - company: 青岛海尔科技有限公司
-        position: 软件开发实习生
+        position: 软件开发部实习生
         location: 中国 青岛
         start_date: 2023-07
         end_date: 2023-10
         highlights:
-          - 基于 SpringBoot 与 PostgreSQL 保障用户体验云平台的高可用性。
+          - 保障用户体验云平台高可用性并解决性能崩溃问题；基于 SpringBoot 设计应用程序，采用 PostgreSQL 进行数据存储与建表。
           - 使用 Profiler 定位代码与性能瓶颈，实施算法优化并降低数据库访问频率。
-          - 借助阿里云 Prometheus 分析内存使用模式，发现并解决内存泄漏、大对象及对象过度创建等问题。
-          - 采用对象池技术预创建常用对象，批量处理大数据以降低内存占用；使用 Bitmap 压缩用户数据结构。
+          - 借助阿里云 Prometheus 服务评估内存使用模式，定位对象过度创建、内存泄漏及大对象等主要问题。
+          - 采用对象池技术预先创建常用对象，批量处理大数据以降低内存占用，并使用 Bitmap 压缩用户信息数据结构。
 
       - company: 科大讯飞股份有限公司
-        position: 软件开发实习生
+        position: 软件开发部实习生
         location: 中国 合肥
         start_date: 2022-12
         end_date: 2023-01
         highlights:
-          - 面向水文水利工程领域开发专项 ASR 流水线。
-          - 基于 Tacotron2_CSMSC 构建语音合成语料库，完成训练/验证/测试集的文本-音频对齐。
-          - 收集并处理实地调研数据，通过自定义文本分词脚本从技术规范中提取关键词汇。
-          - 训练并评估 DeepSpeech2、Transformer、Conformer 及讯飞开放平台 ASR 模型。
+          - 面向水文水利工程领域开发专项语音识别流水线。
+          - 收集并处理实地调研数据，通过自定义文本分词脚本从技术规范中提取关键条款与词汇。
+          - 基于 Tacotron2_CSMSC 构建语音合成语料库，生成多音色音频并将文本-音频对齐至训练、验证和测试数据集。
+          - 在领域语料库上训练并评估多种 ASR 架构——DeepSpeech2、Transformer、Conformer 及讯飞开放平台模型。
+          - 根据验证损失筛选 10–25 个最优检查点并融合为最优平均模型。
           - 识别准确率提升 30%，在领域专项评测数据上达到 >99% 的成功率。
-
-    科研经历:
-      - company: ARCADE Lab，约翰斯·霍普金斯大学
-        position: 研究助理
-        location: 美国 巴尔的摩
-        start_date: 2025-09
-        highlights:
-          - 椎弓根螺钉轨迹自动规划流水线，覆盖 T1–L5 共 742 例患者 CT 数据（规划成功率 91.7%）。
-
-      - company: ARCADE Lab，约翰斯·霍普金斯大学
-        position: 研究助理
-        location: 美国 巴尔的摩
-        start_date: 2025-09
-        highlights:
-          - 基于条件扩散模型（DDPM/DDIM）的动作条件化术中 X 射线视角预测，结合 C 臂引导。
 
     技能:
       - name: 编程语言
         icon: fa-solid fa-code
-        keywords: "Python、C/C++、Java、TypeScript、C#"
+        keywords: "C/C++、Python、Java、C#"
 
-      - name: 框架与工具
+      - name: 开发工具
         icon: fa-solid fa-wrench
-        keywords: "PyTorch、ROS2、Docker、Vue3、SpringBoot、Redis、MongoDB"
+        keywords: "Unity、SpringBoot、Redis、Vue"
 
-      - name: 语言能力
+      - name: 操作系统
+        icon: fa-solid fa-computer
+        keywords: "CentOS、Debian、Ubuntu、Microsoft Windows、Mac OS"
+
+      - name: 标准化考试
         icon: fa-solid fa-language
-        keywords: "普通话（母语）、英语（TOEFL 109）"
+        keywords: "TOEFL 109（R30/L30/S22/W27）、GRE 320（V152/Q168 + 3.5）"
