@@ -407,6 +407,11 @@ ninja.data = [{
           description: "基于 GPT-4o 的情感陪伴社交机器人，部署于真实咖啡馆环境",
           section: "Projects",handler: () => {
               window.location.href = "/projects/coffee_robot/";
+            },},{id: "projects-marc-in-simai-分布式-ai-训练组播算法仿真实现",
+          title: 'MARC-in-SimAI — 分布式 AI 训练组播算法仿真实现',
+          description: "在阿里巴巴开源仿真平台 SimAI 中实现 MARC 硬件组播集合通信算法",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/marc_simai/";
             },},{id: "projects-椎弓根螺钉轨迹自动规划",
           title: '椎弓根螺钉轨迹自动规划',
           description: "覆盖完整胸腰椎的手术路径规划流水线，处理 742 例患者 CT 数据",
