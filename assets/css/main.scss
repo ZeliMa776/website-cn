@@ -37,3 +37,39 @@
 @use "font-awesome/brands";
 @use "font-awesome/solid";
 @use "font-awesome/regular";
+
+// Chinese font
+body {
+  font-family: 'Noto Serif SC', serif;
+}
+
+// Project card overrides
+.projects .card-title {
+  font-size: 1.3rem;
+}
+.projects .card img {
+  height: 180px;
+  object-fit: cover;
+}
+.projects h2.category {
+  color: var(--global-text-color);
+}
+.projects .card-text {
+  font-size: 0.85rem;
+  color: var(--global-text-color);
+}
+
+// Profile image overrides
+.profile {
+  max-width: 200px;
+  text-align: center;
+}
+.profile img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+.profile .social {
+  margin-top: 1rem;
+  font-size: 1.8rem;
+}
