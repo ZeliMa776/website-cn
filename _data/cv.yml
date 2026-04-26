@@ -76,6 +76,12 @@ cv:
         start_date: 2025-09
         highlights:
           - 椎弓根螺钉轨迹自动规划流水线，覆盖 T1–L5 共 742 例患者 CT 数据（规划成功率 91.7%）。
+
+      - company: ARCADE Lab，约翰斯·霍普金斯大学
+        position: 研究助理
+        location: 美国 巴尔的摩
+        start_date: 2025-09
+        highlights:
           - 基于条件扩散模型（DDPM/DDIM）的动作条件化术中 X 射线视角预测，结合 C 臂引导。
 
     技能:
