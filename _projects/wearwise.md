@@ -8,6 +8,8 @@ category: course
 tags: [TypeScript, React, Express, MongoDB, Gemini, Cloudflare R2]
 ---
 
+**在线体验：** [wearwise-cs423.web.app](https://wearwise-cs423.web.app/)
+
 WearWise 是一款个人云端衣橱应用，用户上传服装照片后，系统可根据天气、场合与个人风格提供 AI 穿搭推荐，并支持虚拟试穿图像生成。
 
 ## AI 推荐引擎
