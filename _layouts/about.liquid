@@ -4,7 +4,6 @@ layout: default
 <div class="post">
   <article>
     <div class="about-container" style="display:flex; gap:3rem; align-items:flex-start; max-width:900px; margin:2rem auto;">
-
       <!-- Left column -->
       <div class="about-left" style="min-width:200px; max-width:220px; text-align:center;">
         {% if page.profile and page.profile.image %}
@@ -16,7 +15,11 @@ layout: default
             cache_bust=true
           %}
         {% endif %}
-        <h2 style="font-size:1.4rem; margin:0.5rem 0;">{{ site.first_name }} {{ site.middle_name }} {{ site.last_name }}</h2>
+        <h2 style="font-size:1.4rem; margin:0.5rem 0;">
+          {{ site.first_name }}
+          {{ site.middle_name }}
+          {{ site.last_name }}
+        </h2>
         <p style="font-size:0.9rem; color:#666; margin:0.3rem 0;">{{ page.subtitle }}</p>
         {% if page.social %}
           <div style="margin-top:1rem; font-size:1.6rem;">
@@ -30,7 +33,6 @@ layout: default
         <h2 style="font-size:1.8rem; margin-bottom:1rem;">Biography</h2>
         <div class="clearfix">{{ content }}</div>
       </div>
-
     </div>
 
     <!-- News -->
